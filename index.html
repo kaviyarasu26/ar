@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .text,html,body{
+        .text,
+        html,
+        body {
             width: 100%;
             height: 100vh;
         }
-        body{
+
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,11 +25,9 @@
 <body>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-    <model-viewer class="text"
-        alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-        src="./office_computer.glb" ar 
-         shadow-intensity="1" camera-controls touch-action="pan-y">
-    </model-viewer>
+    <model-viewer class="text" src="./office_computer.glb" ar ar-scale="fixed" camera-controls 
+        touch-action="pan-y" alt="A 3D model of an astronaut"
+         xr-environment></model-viewer>
 </body>
 
 </html>
